@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>sumar numeros</h1>
+    <p>Edison tiene: <input type="text" name="v1" id="v1"></p>
+    <p>luis tiene <input type="text" name="v2" id="v2"></p>
+    <p>nosotros tenemos: <input type="text" name="res" id="res"></p>
+
+    
+    <button onclick="calcular();" >sumar</button>
+    <button onclick="multiplicar();">multlicar</button>
+    <button onclick="dividir();">dividir</button>
+    <button onclick="restar();">restar</button>
+    
+    <script type="text/javascript">
+
+        
+
+    function calcular() {
+
+        let v1 = document.getElementById('v1').value;
+        let v2 = document.getElementById('v2').value;
+
+        let vv1 = parseInt(v1, 10);
+        let vv2 = parseInt(v2, 10);
+
+        let res = vv1 + vv2;
+
+        document.getElementById('res').value = res;
+    }
+    function multiplicar(){
+        let v1 = document.getElementById('v1').value;
+        let v2 = document.getElementById('v2').value;
+
+        let vv1 = parseInt(v1, 10);
+        let vv2 = parseInt(v2, 10);
+
+        let mult= vv1 * vv2;
+
+        document.getElementById('res').value = mult;
+    }
+    function dividir(){
+        let v1 = document.getElementById('v1').value;
+        let v2 = document.getElementById('v2').value;
+
+        let vv1 = parseInt(v1, 10);
+        let vv2 = parseInt(v2, 10);
+
+        let div= vv1/ vv2;
+
+        document.getElementById('res').value = div;
+        }
+        function restar(){
+
+        let v1 = document.getElementById('v1').value;
+        let v2 = document.getElementById('v2').value;
+
+        let vv1 = parseInt(v1, 10);
+        let vv2 = parseInt(v2, 10);
+
+        let resta= vv1- vv2;
+
+        document.getElementById('res').value=resta
+
+        }
+    
+    </script>
+</body>
+</html>
