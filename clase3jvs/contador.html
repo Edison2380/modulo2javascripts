@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+
+<h1>Ejemplo de inserción de html</h1>
+<button onclick="agregar();">agregar otro elemento</button><br>
+<form method="get" action="#">
+<p id="cont">
+
+    elemento 1:<input type="text" name="ele1" id="ele1"><br>
+</p>
+<input type="submit" name="enviar" value="enviar">
+</form>
+<script type="text/javascript">
+    var contenido="elemento 1:<input type='text' name='ele1' id='ele1'><br>";
+    var contador=1;
+        function agregar(){
+            contador=contador+1;
+            let extra="elemento"+contador+"<input type='text' name='ele'"+contador+"'id='ele"+contador+"'><br>";
+        contenido=conetnido+extra;
+        document.getElementById('cont').innerHTML=contenido;
+    }
+</script>
+</body>
+</html>
+Edison — hoy a las 10:42
+<h1>ejemplo de variables</h1><br>
+    <input type="checkbox" name="est" id="est">
+    <p id="tip"></p>
+    <button onclick="datos();">evaaluar</button>
+
+    <script type="text/javascript">
+
+
+        function datos(){
+            let estado= true;//falsa
+            let chex= document.getElementById('est').checked;
+            if  (chex){
+                document.getElementById('tip').innerHTML="verdader";
+            }else{
+
+                document.getElementById('tip').innerHTML="falso";
+            }
+
+        }
+
+
+    </script>
