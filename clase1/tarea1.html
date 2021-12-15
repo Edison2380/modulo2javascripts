@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java crip</title>
+</head>
+
+<body>
+    <h1>radio</h1>
+    <p>valor1 <input type="text" name="radio" id="v1"></p>
+    <p>resultado
+        <input type="text" id="res">
+    </p>
+    <button onclick="calcular();">radio</button>
+    <button onclick="calcular1();">perimetro</button>
+    <button onclick="calcular2();">area</button>
+       
+
+    <script type="text/javascript">
+
+      function calcular(){
+         let v1 = document.getElementById('v1').value;
+        
+         let vv1 = parseInt(v1,10);
+         
+
+         let rad = vv1*2;
+
+         document.getElementById('res').value=rad;
+
+      }
+
+      function calcular1(){
+
+        let v1 = document.getElementById('v1').value;
+        let vv1 = parseInt(v1,10);
+
+        let per = vv1*2*Math.PI;
+
+        document.getElementById('res').value=per;
+
+
+      }
+
+      function calcular2(){
+
+        let v1 = document.getElementById('v1').value;
+        let vv1 = parseInt(v1,10);
+
+        let are = Math.PI*(vv1*vv1);
+
+        document.getElementById('res').value=are;
+
+
+      }
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
