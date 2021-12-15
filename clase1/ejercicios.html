@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+	<title></title>
+</head>
+
+<body>
+	<h1>Trabajo profundo viernes en la noche</h1>
+
+	<p id="cabros">buena Carlos</p>
+
+	<button onclick="document.getElementById('cabros').innerHTML= 'buena Edison';">oprima aca</button>
+
+
+
+
+
+	<h1>Sumar</h1>
+
+	<p>Carlos tiene:<input type="number" name="n1" id="v1"></p>
+
+	<p>Edison tiene:<input type="text" name="n2" id="v2"></p>
+
+	<p>Ellos tienen::<input type="text" name="res" id="res"></p>
+
+	<button onclick="calcular()";>Suma</button>
+	<button onclick="calcular1()";>resta</button>
+
+
+	<script type="text/javascript">
+
+		function calcular() {
+
+			let v1 = document.getElementById('v1').value;
+			let v2 = document.getElementById('v2').value;
+
+			let vv1 = parseInt(v1, 10);
+			let vv2 = parseInt(v2, 10);
+
+			let res = vv1 + vv2;
+
+			document.getElementById('res').value = res;
+		}
+
+		function calcular1() {
+
+			let v1 = document.getElementById('v1').value;
+			let v2 = document.getElementById('v2').value;
+
+			let vv1 = parseInt(v1, 10);
+			let vv2 = parseInt(v2, 10);
+
+			let res = vv1 - vv2;
+
+			document.getElementById('res').value = res;
+
+
+		}
+
+	</script>
+
+
+
+
+
+
+
+</body>
+
+</html>
