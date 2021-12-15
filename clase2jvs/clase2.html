@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="txt"></p>
+
+
+    <script type="text/javascript">
+        var texto="";
+        var num=12;
+        if(num>10){ // SE PEUEDE EVALUAR QUE SEA MAYOR QUE, MENOR QUE, IGUAAL QUE Y DISTINTO QUE 
+            texto="el numero es:"+num+" mayor que el criterio";
+        }  
+        else if(num>5){
+            texto="el numero es:"+num+"cumple el segundo criterio";
+
+        }
+        else¨{
+            texto="el numero es:"+num+"ninguno de los criterios";
+        }
+        
+
+        document.getElementById('txt').innerhtml=texto
+
+
+        /*
+        igual => if(num==10)
+        igual => if( txt=="ejemplo") igualdad
+        igual => if( txt==="ejemplo") igualdad estricta
+         
+        distinto => if(num!=10)
+        distinto => if(txt!"ejemplo")
+
+        mayor que => if(num>10)
+        mayor que => if(num<10)
+        mayor o igual  que => if(num>=10)
+        mayor o igual que => if(num<=10)
+        
+        */
+
+
+
+
+    </script>
+</body>
+</html>
