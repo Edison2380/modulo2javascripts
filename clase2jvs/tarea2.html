@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Promedio en clases </h1>
+
+    ingrese nota 1: <input type="text"   name="n1" id="n1"><br>
+    ingrese nota 2: <input type="text"   name="n2" id="n2"><br>
+    ingrese nota 3: <input type="text" name="n3" id="n3"><br>
+    ingresee nota 4 : <input type="text" name="n4" id="n4">
+    <p id="res"></p><br>
+    <p>promedio : <input type="text" name="res1" id="res1"></p><br>
+    <button onclick="evaluar();">verificar</button>
+
+    <script type="text/javascript">
+
+        function evaluar(){
+            let v1 = document.getElementById('n1').value;
+            let v2 = document.getElementById('n2').value;
+            let v3 = document.getElementById('n3').value;
+            let v4 = document.getElementById('n4').value;
+            
+
+            let h1= parseInt(v1,10);
+            let h2= parseInt(v2,10);
+            let h3= parseInt(v2,10);
+            let h4= parseInt(v2,10);
+            let res="";
+            let prom=(h1+h2+h3+h4)/4;
+
+            if(prom>=4){
+                res="aprobado ";
+
+            }else{
+
+                    res="Reprobado";
+                }
+                document.getElementById('res1').value=res
+            }
+        </script>
+</body>
+</html>
