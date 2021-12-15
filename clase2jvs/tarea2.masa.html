@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> tabla de Medicion Corporal</h1>
+
+     ingrese su  peso: <input type="text"   name="n1" id="n1"><br>
+     inngrse su estatura  : <input type="text"   name="n2" id="n2"><br>
+     Resultado : <input type="text" name="res" id="res"><br>
+    
+    <button onclick="calcular();">vamos ok</button>
+
+    <script type="text/javascript">
+
+        function calcular(){
+
+            
+
+            let n1 = document.getElementById('n1').value;
+            let n2 = document.getElementById('n2').value;
+            let l1 = parseFloat(n1,10);
+            let l2 = parseFloat(n2,10);
+            let res="";
+
+            let imc= (l1/(l2*l2));
+            
+            if(imc<=18.5){
+
+                res="Bajo  el peso normal";
+                                             
+            }else if(imc<=24.9){
+                res="peso normal";
+            }else if(imc<=29.9){
+                res="Gordo";
+            }else{
+                res="sobre peso";
+            }
+            
+
+            
+
+            
+            document.getElementById('res').value=res;
+            
+
+        }
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
